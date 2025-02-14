@@ -15,7 +15,7 @@ import MentorPage from "./Pages/MentorPage";
 import ThemeProvider from "./Context/ThemeContext";
 export default function App() {
   return (
-    <div className="min-h-screen text-[#334155] dark:text-[#f8fafc] bg-white dark:bg-[#0f172a] font-Inter  overflow-x-hidden">
+    <div className="min-h-screen max-w-[1444px] m-auto text-[#334155] dark:text-[#f8fafc] bg-white dark:bg-[#0f172a] font-Inter  overflow-x-hidden">
       <ThemeProvider>
         <Router>
           <Routes>
