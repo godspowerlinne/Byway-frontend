@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import Button from "../Components/reusable-components/Button";
-import byway_header_1 from "/byway_header_1.webp";
-import byway_header_3 from "/byway_header_2.webp";
-import byway_header_2 from "/byway_header_3.webp";
-import byway_header_4 from "/byway_header_4.webp";
+import byway_header_1 from "/byway_header_1.png";
+import byway_header_3 from "/byway_header_2.png";
+import byway_header_2 from "/byway_header_3.png";
+import byway_header_4 from "/byway_header_4.png";
 
 const HomeHero = () => {
 
@@ -11,11 +11,11 @@ const HomeHero = () => {
   const HeroSectionText = ({ paragraphText }) => {
     return (
       <div className="HeroSectionText flex flex-col max-w-[592px] justify-center gap-5">
-        <h1 className="text-[#0F172A] text-[25px] lg:text-[40px] font-[700] max-w-[483px]">Unlock Your Potential with Byway</h1>
-        <p className="text-[#64748B]">{paragraphText}</p>
+        <h1 className="text-[#0F172A] dark:text-[#dad1db] text-[25px] lg:text-[40px] font-[700] max-w-[483px]">Unlock Your Potential with Byway</h1>
+        <p className="text-[#64748B] dark:text-[#d1d5db]">{paragraphText}</p>
         <Button
           btnText={`Start your instructor journey`}
-          btnStyle={`bg-[#2563EB] dark:bg-[#350606] rounded-[8px] py-[10px] max-w-[238px] hover:bg-black text-white`}
+          btnStyle={`bg-[#2563EB] dark:bg-[#350606] rounded-[8px] py-[10px] max-w-[238px] hover:bg-black dark:hover:bg-[#2d29bf] text-white`}
         />
       </div>
     );
@@ -63,9 +63,9 @@ const HomeHero = () => {
   // Hero Section Content
   const HeroSectionContent = ({ heroText, heroImg, alt }) => {
     return (
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 w-full lg:h-[600px] flex-shrink-0">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-24 w-full lg:h-[600px] flex-shrink-0">
         {heroText}
-        <img className="ml-auto object-cover m-auto w-full" src={heroImg} alt={alt} />
+        <img className="ml-auto object-cover m-auto w-[90%]" src={heroImg} alt={alt} />
       </div>
     );
   };

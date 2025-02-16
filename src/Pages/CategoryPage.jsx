@@ -5,9 +5,9 @@ import Navbar from '../Components/Navbar';
 const CategoryPage = () => {
   return (
     <>
-    <Navbar/>
-    <div>CategoryPage</div>
-    <Footer/>
+      <Navbar />
+      <div>CategoryPage</div>
+      <Footer />
     </>
   )
 }
