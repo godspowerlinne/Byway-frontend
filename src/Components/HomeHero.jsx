@@ -73,12 +73,12 @@ const HomeHero = () => {
   // Indicator Buttons
   const IndicatorButtons = () => {
     return (
-      <div className="flex gap-4 justify-center mt-8">
+      <div className="flex gap-10 justify-center mt-8">
         {slides.map((_, index) => (
           <button
             key={index}
             onClick={() => goToSlide(index)}
-            className={`w-3 h-3 rounded-full ${index === currentSlide ? "bg-blue-600 dark:bg-red-600" : "bg-gray-400"
+            className={`w-3 h-3 rounded-full ${index === currentSlide ? "bg-blue-600 dark:bg-red-600" : "bg-[#91d6e0]"
               }`}
           />
         ))}
