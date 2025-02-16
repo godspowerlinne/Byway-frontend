@@ -3,6 +3,8 @@ import Navbar from "../Components/Navbar";
 import HomeHero from "../Components/HomeHero";
 import HomeStatistic from "../Components/HomeStatistic";
 import TopCategories from "../Components/TopCategories";
+import TopCourses from "../Components/TopCourses";
+import TopInstructors from "../Components/TopIntructors";
 
 
 const HomePage = () => {
@@ -14,6 +16,8 @@ const HomePage = () => {
         <HomeHero />
         <HomeStatistic />
         <TopCategories />
+        <TopCourses/>
+        <TopInstructors/>
       </div>
       <Footer />
     </>

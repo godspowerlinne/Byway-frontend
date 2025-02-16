@@ -11,7 +11,7 @@ const HomeHero = () => {
   const HeroSectionText = ({ paragraphText }) => {
     return (
       <div className="HeroSectionText flex flex-col max-w-[592px] justify-center gap-5">
-        <h1 className="text-[#0F172A] text-[40px] font-[700] max-w-[483px]">Unlock Your Potential with Byway</h1>
+        <h1 className="text-[#0F172A] text-[25px] lg:text-[40px] font-[700] max-w-[483px]">Unlock Your Potential with Byway</h1>
         <p className="text-[#64748B]">{paragraphText}</p>
         <Button
           btnText={`Start your instructor journey`}

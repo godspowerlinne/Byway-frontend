@@ -8,7 +8,7 @@ const Top_Link = (Top) => {
             <h2 className="text-[24px] font-[600]">{Top.name}</h2>
             <Button
                 btnText={
-                    <Link to="#" className="text-[14px] text-[#3B82F6]">
+                    <Link to="#" className="text-[14px] text-[#3B82F6] dark:text-[#109191] hover:text-[#109191] dark:hover:text-[#3B82F6]">
                         See all
                     </Link>
                 }
