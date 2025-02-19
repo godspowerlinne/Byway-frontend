@@ -24,7 +24,7 @@ const TopInstructors = () => {
     return (
         <div className="my-12">
             <Top_Link name="Top Instructors" />
-            <div className="grid grid-cols-2 lg:grid-cols-5 gap-8">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
                 <Top_Contents
                     img={RonaldRichards}
                     title="Ronald Richards"

@@ -5,6 +5,7 @@ import HomeStatistic from "../Components/HomeStatistic";
 import TopCategories from "../Components/TopCategories";
 import TopCourses from "../Components/TopCourses";
 import TopInstructors from "../Components/TopIntructors";
+import CTA from "../Components/CTA";
 
 
 const HomePage = () => {
@@ -18,6 +19,7 @@ const HomePage = () => {
         <TopCategories />
         <TopCourses/>
         <TopInstructors/>
+        <CTA />
       </div>
       <Footer />
     </>
