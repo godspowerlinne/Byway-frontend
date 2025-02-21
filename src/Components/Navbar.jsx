@@ -99,7 +99,7 @@ const Navbar = () => {
         </Link>
         <button
           onClick={toggleTheme}
-          className="p-1 rounded-full bg-gray-700 hover:bg-gray-800 dark:bg-gray-500 absolute top-0 left-[65.5%] z-50 translate-y-[70%] "
+          className="p-1 rounded-full bg-gray-700 hover:bg-gray-800 dark:bg-gray-500 absolute top-0 left-[55.5%] lg:left-[97%] z-50 translate-y-[70%] "
         >
           {isDarkMode ? (
             <SunDim className="scale-125 text-yellow-300 hover:text-yellow-500" />
@@ -107,7 +107,7 @@ const Navbar = () => {
             <Moon className="scale-125 text-gray-400" />
           )}
         </button>
-        <div className="flex flex-col lg:flex-row lg:h-[50px] w-fit ml-auto gap-4 lg:w-[91%]  items-end justify-center lg:-translate-y-[50px] -translate-y-[40px]">
+        <div className="flex flex-col lg:flex-row lg:h-[50px] w-fit ml-auto gap-4 lg:w-[87%]  items-end justify-center lg:-translate-y-[50px] -translate-y-[40px]">
           {/* Mobile menu toggle  */}
           <Button
             btnText={
@@ -141,7 +141,7 @@ const Navbar = () => {
             {/* Link to Mentors page  */}
             <Link
               to="/mentor-page"
-              className="rounded-[4px] shadow-md lg:shadow-none hover:shadow-slate-400 dark:hover:shadow-[#1e293b] text-[19px] lg:text-[16px] hover:text-[#3B82F6] dark:hover:text-[#109191]   p-4 lg:p-2  text-center w-full  lg:w-auto"
+              className="rounded-[4px] shadow-md lg:shadow-none hover:shadow-slate-400 dark:hover:shadow-[#1e293b] text-[19px] lg:text-[16px] hover:text-[#3B82F6] dark:hover:text-[#109191]   p-4 lg:p-2  text-center w-fit  lg:w-auto"
             >
               Teach On Byway
             </Link>

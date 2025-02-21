@@ -9,7 +9,7 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const Reviews = () => {
     return (
-        <div className='flex flex-col gap-4 max-w-[432px] p-6  rounded-2xl border-[1px] border-[#E2E8F0] dark:border-[#867CB8] hover:bg-[#DBF4FA] dark:hover:bg-[#282e2f] hover:scale-95 duration-300 bg-white dark:bg-[#3B82F61F]'>
+        <div className='flex flex-col gap-4 max-w-full md:max-w-[432px]  p-6  rounded-2xl border-[1px] border-[#E2E8F0] dark:border-[#867CB8] hover:bg-[#DBF4FA] dark:hover:bg-[#282e2f] hover:scale-95 duration-300 bg-white dark:bg-[#3B82F61F]'>
             <div className="p-2">
                 <img src={quotes} alt="Quote" />
             </div>
@@ -57,18 +57,10 @@ const CustomersReviews = () => {
                 }
             },
             {
-                breakpoint: 600,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2,
-                    initialSlide: 2
-                }
-            },
-            {
-                breakpoint: 480,
+                breakpoint: 750,
                 settings: {
                     slidesToShow: 1,
-                    slidesToScroll: 1
+                    slidesToScroll: 1,
                 }
             }
         ]
