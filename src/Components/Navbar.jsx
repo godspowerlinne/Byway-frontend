@@ -49,14 +49,18 @@ const Navbar = () => {
   const UnauthenticatedUser = () => {
     return (
       <div className="flex lg:w-auto w-full flex-col lg:flex-row gap-6">
-        <Button
-          btnText="Login"
-          btnStyle="text-[#334155] hover:bg-[#334155]  dark:text-[#f8fafc] hover:text-[#f8fafc] rounded-[2px] lg:w-[61px] h-[50px] text-[19px] lg:text-[16px] lg:h-[40px] border border-[#334155] dark:border-[#f8fafc] hover:shadow-md p-2 text-center w-full"
-        />
-        <Button
-          btnText="Sign Up"
-          btnStyle="bg-[#334155] dark:bg-[#f8fafc] rounded-[2px] hover:bg-white dark:hover:bg-[#ddd] text-white dark:text-black hover:text-[#334155] lg:w-[73px] h-[50px] text-[19px] lg:text-[16px] lg:h-[40px] border border-[#334155] dark:border-[#f8fafc] hover:shadow-md py-2 text-center w-full"
-        />
+        <Link to="/login">
+          <Button
+            btnText="Login"
+            btnStyle="text-[#334155] hover:bg-[#334155]  dark:text-[#f8fafc] hover:text-[#f8fafc] rounded-[2px] lg:w-[61px] h-[50px] text-[19px] lg:text-[16px] lg:h-[40px] border border-[#334155] dark:border-[#f8fafc] hover:shadow-md p-2 text-center w-full"
+          />
+        </Link>
+        <Link to="/signup">
+          <Button
+            btnText="Sign Up"
+            btnStyle="bg-[#334155] dark:bg-[#f8fafc] rounded-[2px] hover:bg-white dark:hover:bg-[#ddd] text-white dark:text-black hover:text-[#334155] lg:w-[73px] h-[50px] text-[19px] lg:text-[16px] lg:h-[40px] border border-[#334155] dark:border-[#f8fafc] hover:shadow-md py-2 text-center w-full"
+          />
+        </Link>
       </div>
     );
   };
@@ -123,8 +127,9 @@ const Navbar = () => {
 
           {/* Main menu items  */}
           <div
-            className={`${isMobileMenuOpen ? "flex" : "hidden"
-              } flex-col lg:flex-row lg:flex items-center lg:h-full bg-slate-300 dark:bg-[#564848] rounded lg:rounded-none hover:shadow-2xl lg:hover:shadow-none lg:dark:bg-transparent lg:bg-transparent justify-between gap-4 w-[80vw] h-[80vh]  p-8 py-16 lg:p-0 lg:w-[100%]`}
+            className={`${
+              isMobileMenuOpen ? "flex" : "hidden"
+            } flex-col lg:flex-row lg:flex items-center lg:h-full bg-slate-300 dark:bg-[#564848] rounded lg:rounded-none hover:shadow-2xl lg:hover:shadow-none lg:dark:bg-transparent lg:bg-transparent justify-between gap-4 w-[80vw] h-[80vh]  p-8 py-16 lg:p-0 lg:w-[100%]`}
             id="menu"
           >
             {/* Link to Categories page  */}
