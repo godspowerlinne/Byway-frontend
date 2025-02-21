@@ -6,7 +6,7 @@ import CTA_male from "/CTA_male.png";
 const Intrusctors = (CallToAction) => {
     return (
         <div
-            className={`${CallToAction.displayStyle}  flex flex-col gap-4 justify-between items-center`}
+            className={`${CallToAction.displayStyle}  flex flex-col gap-4 mb-10 justify-between items-center`}
         >
             {/* Image of Instructor */}
             <div className="max-w-[400px]">

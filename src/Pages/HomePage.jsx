@@ -6,6 +6,7 @@ import TopCategories from "../Components/TopCategories";
 import TopCourses from "../Components/TopCourses";
 import TopInstructors from "../Components/TopIntructors";
 import CTA from "../Components/CTA";
+import CustomersReviews from "../Components/CustomersReviews";
 
 
 const HomePage = () => {
@@ -19,6 +20,7 @@ const HomePage = () => {
         <TopCategories />
         <TopCourses/>
         <TopInstructors/>
+        <CustomersReviews/>
         <CTA />
       </div>
       <Footer />
