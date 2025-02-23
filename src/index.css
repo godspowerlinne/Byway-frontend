@@ -7,3 +7,6 @@
 .slick-slide>div {
   margin: 0 10px;
 }
+* {
+    transition: all 0.1s !important;
+}

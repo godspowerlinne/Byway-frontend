@@ -13,9 +13,10 @@ import CheckOutPage from "./Pages/CheckOutPage";
 import OrderCompletePage from "./Pages/OrderCompletePage";
 import MentorPage from "./Pages/MentorPage";
 import ThemeProvider from "./Context/ThemeContext";
+import DashboardPage from "./Pages/DashboardPage";
 export default function App() {
   return (
-    <div className="min-h-screen max-w-[1444px] m-auto text-[#334155] dark:text-[#f8fafc] bg-white dark:bg-[#0f172a] font-Inter  overflow-x-hidden">
+    <div className="max-w-[1444px] m-auto text-[#334155] dark:text-[#f8fafc] bg-white dark:bg-[#0f172a] font-Inter  overflow-x-hidden">
       <ThemeProvider>
         <Router>
           <Routes>
@@ -23,6 +24,7 @@ export default function App() {
             <Route path="/login" element={<LoginPage />} />
             <Route path="/signup" element={<SignupPage />} />
             {/* Auth User's Page  */}
+            <Route path="/dashboard" element={<DashboardPage />} />
             <Route path="/shopping-cart" element={<ShoppingCartPage />} />
             <Route path="/courses" element={<CoursePage />} />
             <Route path="/category-page" element={<CategoryPage />} />
